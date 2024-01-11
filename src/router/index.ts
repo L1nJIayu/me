@@ -19,16 +19,16 @@ const router = createRouter({
       name: 'itemOf100days',
       component: () => import('@/views/100days/ItemOf100Days.vue'),
       children: [
-        // {
-        //   path: ':001',
-        //   name: '001',
-        //   component: () => import('@/views/100days/Mass.vue')
-        // },
         {
-          path: ':Canvas',
-          name: 'Canvas',
-          component: () => import('@/views/100days/Canvas.vue')
+          path: ':001',
+          name: '001',
+          component: () => import('@/views/100days/Mass.vue')
         },
+        // {
+        //   path: ':Canvas',
+        //   name: 'Canvas',
+        //   component: () => import('@/views/100days/Canvas.vue')
+        // },
       ]
     }
   ]
