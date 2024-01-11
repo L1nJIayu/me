@@ -21,6 +21,10 @@ const list = ref([
   {
     id: '001',
     name: 'Mass',
+  },
+  {
+    id: 'Canvas',
+    name: 'Canvas',
   }
 ])
 
