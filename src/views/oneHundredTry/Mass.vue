@@ -1,6 +1,6 @@
 
 <template>
-  <div class="box" id="box"></div>
+  <div class="centered index-page" id="box"></div>
 </template>
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
@@ -31,9 +31,9 @@ const init = () => {
   // create an engine
   var engine = Engine.create()
 
-  const mouse = Mouse.create({
-    element: el
-  })
+  // const mouse = Mouse.create({
+  //   element: el
+  // })
 
   // create a renderer
   const boxRef = ref<HTMLElement>()
