@@ -62,7 +62,7 @@ const init = () => {
       constraint: {
         stiffness: 0.2,
         render: {
-          visible: true
+          visible: false
         }
       }
     })
@@ -111,8 +111,8 @@ const createBox = () => {
     const box = Matter.Bodies.rectangle(size / 2, size / 2, size, size,{
       density: 0.0005,
       frictionAir: 0,
-      restitution: 0.8,
-      friction: -0.1,
+      restitution: 0.5,
+      friction: 0.01,
       render: {
           // sprite: {
           //     texture: '//cdn.rawgit.com/liabru/matter-js/2560a681/demo/img/ball.png'

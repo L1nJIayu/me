@@ -17,11 +17,8 @@ const router = createRouter({
       name: 'itemOf100days',
       component: () => import('@/views/oneHundredTry/ItemOf100Days.vue'),
       children: [
-        {
-          path: ':001',
-          name: '001',
-          component: () => import('@/views/oneHundredTry/Mass.vue')
-        },
+        { path: '001', name: '001', component: () => import('@/views/oneHundredTry/Mass.vue') },
+        { path: '002', name: '002', component: () => import('@/views/oneHundredTry/Scope.vue') },
         // {
         //   path: ':Canvas',
         //   name: 'Canvas',

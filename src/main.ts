@@ -8,6 +8,7 @@ import router from './router'
 
 import 'normalize.css'
 import 'virtual:uno.css'
+import './styles/common.less'
 
 const app = createApp(App)
 

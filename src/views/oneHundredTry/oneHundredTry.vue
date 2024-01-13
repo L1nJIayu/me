@@ -24,18 +24,26 @@ import Mass from './Mass.vue'
 
 const router = useRouter()
 
-
-const list = ref([
+type ListItem ={
+  id: string,
+  name :string
+}
+const list = ref<ListItem[]>([
   {
+    id: '001',
     name: 'Mass',
+  },
+  {
+    id: '002',
+    name: 'Scope',
   }
 ])
 
 const getSerialNum = (num: number) => String(num + 1).padStart(3, '0')
 
-const handleClick = (item) => {
+const handleClick = (item: ListItem) => {
   router.push({
-    path: `itemOf100days/${item.id}`
+    path: `/itemOf100days/${item.id}`
   })
 }
 document.title = '100try'
